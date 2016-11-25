@@ -10,4 +10,4 @@ RUN ln -s /usr/bin/php-config7 /usr/bin/php-config
 RUN sed -i 's/\-n//g' /usr/bin/pecl
 
 RUN pecl install imagick
-RUN echo "extension=imagick.so" > /etc/php7/conf.d/00_imagick.conf
+RUN echo "extension=imagick.so" > /etc/php7/conf.d/00_imagick.ini
